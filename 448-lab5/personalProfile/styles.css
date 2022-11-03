@@ -1,27 +1,62 @@
-.banner {
+body {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
+.banner {
+  background-color: blue;
 }
 
 h1 {
-  
+  font-family: Arial;
+  color: white;
+  padding: 10px;
 }
 
 img {
-
+  width: 560px;
+  height: 315px;
+  padding: 20px;
+  display: block;
+  margin: auto;
+  background-image: url(images/background.jpg); 
+  background-size: 100%;  
 }
 
 p {
-
+  font-family: Arial;
+  font-size: 16pt;
 }
 
 .links {
-
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 a {
+  cursor: pointer;
+  font-size: 12pt;
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
 
 }
 
-iframe {
+a:hover {
+  font-size: 14pt;
+  font-weight: 800;
+}
 
+iframe {
+  display: block;
+  margin: auto;
+  padding: 10px;
+}
+
+.container {
+  background-image: url(images/background.jpg); 
+  background-size: 100%;  
 }
