@@ -1,0 +1,28 @@
+body {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: Arial;
+  background-color: rgb(215, 244, 244)
+}
+
+.banner {
+  background-color: rgb(225, 176, 249);
+  padding: 12px;
+}
+
+h3 {
+  border-bottom: 1px black solid;
+  width: 18%;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 14pt;
+  color: black;
+}
+
+.link:hover {
+  font-size: 18pt;
+
+}
