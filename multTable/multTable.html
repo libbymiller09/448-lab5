@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Multiplication Table</title>
+<body>
+  <h1>Multiplication table for 100</h1>
+    <table>
+      <?php
+
+        for ($i = 1; $i <= 100; $i++) {
+          echo "<tr>";
+          for ($j = 1; $j <= 100; $j++) {
+            $value = ($i * $j);
+            echo "<td> $value </td>";
+          }
+          echo "</tr>";
+        }
+        ?>
+    </table>
+</body>
+</html>
