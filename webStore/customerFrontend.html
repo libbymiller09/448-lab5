@@ -2,37 +2,45 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
     <script type="text/javascript" scr="formChecker.js"></script>
     <?php include 'customerBackend.php';?>
-    <title>Web Store</title>
+    <title>Bakery Web Store</title>
   </head>
   <body>
-    <h1>Web Store</h1>
+    <h1>Bakery Web Store</h1>
     <form class="" action="customerBackend.php" method="post" onsubmit="validateForm()">
-        <legend>Order form: </legend>
+        <legend>Order form</legend>
 
         <label for="name">Customer username: </label>
-        <input type="email" name="name" value="name" required>
+        <input type="email" name="name" value="" required>
+        <br>
         <label for="password">Password: </label>
-        <input type="password" name="password" value="password" required>
-
-        <label for="cookies">Cookies </label>
-        <input type="text" name="cookies" value="cookies">
-        <label for="cakes">Cakes</label>
-        <input type="text" name="cakes" value="cakes">
-        <label for="pies">Pies</label>
-        <input type="text" name="pies" value="pies">
+        <input type="password" name="password" value="" required>
+        <br>
+        <label for="cookies">Cookies: </label>
+        <input type="text" name="cookies" value="">
+        <br>
+        <label for="cakes">Cakes: </label>
+        <input type="text" name="cakes" value="">
+        <br>
+        <label for="pies">Pies: </label>
+        <input type="text" name="pies" value="">
 
         <legend>Shipping Options: </legend>
         <label for="free">Free 7 day</label>
-        <input type="radio" class="shipping" name="free" value="free">
+        <input type="radio" class="shipping" name="shipping" value="free">
+        <br>
         <label for="overNight">$50.00 over night</label>
-        <input type="radio" class="shipping" name="overNight" value="overNight">
+        <input type="radio" class="shipping" name="shipping" value="overNight">
+        <br>
         <label for="threeDay">$5.00 three day</label>
-        <input type="radio" class="shipping" name="threeDay" value="threeDay">
-
-        <button type="submit" name="submitButton">Submit</button>
-        <button type="button" name="resetButton" onclick="resetForm()">Reset</button>
+        <input type="radio" class="shipping" name="shipping" value="threeDay">
+        <br>
+        <div class="containerForButtons">
+          <button type="submit" name="submitButton">Submit</button>
+          <button type="button" name="resetButton" id="resetButton" onclick="resetForm()">Reset</button>
+        </div>
     </form>
   </body>
 </html>
