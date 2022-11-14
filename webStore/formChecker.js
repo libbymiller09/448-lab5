@@ -22,3 +22,5 @@ function resetForm() {
   pieQuantity = "";
   shipping.checked = false;
 }
+
+document.getElementById("resetButton").addEventListener("click", resetForm);
